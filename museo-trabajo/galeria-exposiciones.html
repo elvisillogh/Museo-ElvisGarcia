@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Exposiciones | Museo Horizonte</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; color: #263238; background: #f5f2ed; }
+    header { background: #20384b; color: white; padding: 1.5rem 1rem; text-align: center; }
+    nav { background: #d99a37; padding: .7rem 1rem; }
+    nav ul { list-style: none; display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin: 0; padding: 0; }
+    nav a { color: #1d2932; font-weight: bold; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    main { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+    .galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    article { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px #00000018; }
+    article img { display: block; width: 100%; height: 360px; object-fit: contain; background: #e8e3dc; }
+    article .texto { padding: 1rem 1.2rem; }
+    footer { text-align: center; background: #20384b; color: white; padding: 1rem; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Museo Horizonte</h1>
+    <p>Galería de Exposiciones</p>
+  </header>
+  <nav aria-label="Navegación principal">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="galeria-exposiciones.html">Galería de Exposiciones</a></li>
+      <li><a href="precios.html">Precios</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Galería de Exposiciones</h2>
+    <p>Estas son dos obras que forman parte de la selección presentada en el Museo Horizonte.</p>
+    <div class="galeria">
+      <article>
+        <img src="fotos/obra-abstracta.png" alt="Pintura abstracta con curvas y pinceladas en tonos naranjas, amarillos y oscuros">
+        <div class="texto">
+          <h3>1. Energía en movimiento</h3>
+          <p>Esta obra abstracta utiliza tonos naranjas, amarillos y negros para crear una sensación de movimiento. Las líneas curvas parecen extenderse por el lienzo y transmiten fuerza, dinamismo y calor.</p>
+          <p><strong>Estilo:</strong> Arte abstracto.</p>
+        </div>
+      </article>
+      <article>
+        <img src="fotos/pintura-ecuestre.png" alt="Pintura de estilo clásico con una persona montada en un caballo blanco en un paisaje">
+        <div class="texto">
+          <h3>2. Paseo a caballo</h3>
+          <p>Esta pintura figurativa muestra a una persona montada en un caballo blanco dentro de un paisaje. El marco dorado y los tonos oscuros de la escena recuerdan la presentación tradicional de las obras clásicas en los museos.</p>
+          <p><strong>Estilo:</strong> Pintura figurativa de inspiración clásica.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+  <footer><p>&copy; 2025 Museo Horizonte · Proyecto educativo de HTML</p></footer>
+</body>
+</html>
